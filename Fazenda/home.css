@@ -36,6 +36,7 @@ nav ul {
 nav ul li {
     margin: 0 20px;
     padding-left: 50px;
+    align-self: center;
 }
 
 nav ul li a {
@@ -82,7 +83,7 @@ nav ul li a:hover {
 
 .hero {
     background: url('img/banner.png') no-repeat center center/cover;
-    height: calc(100vh - 70px); /* 100% da viewport menos a altura do header */
+    height: calc(105vh - 70px); /* 100% da viewport menos a altura do header */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,22 +110,23 @@ nav ul li a:hover {
 }
 
 .hero-text h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 
-.hero-text .t2 h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+.hero-text .t1 h1 {
+    margin-left: 35px;
 }
-.hero-text h1::after {
+
+/*.hero-text .t2 h1 {
+   
+} */
+.hero-text .t1 h1::after {
     content:"";
-    width: 80%;
-    height: 1px;
+    width: 100%;
+    height: 0.7px;
     display: block;
     margin: 0 auto;
     background-color: #ffffff;
@@ -133,12 +135,12 @@ nav ul li a:hover {
 
 .hero-text .t2 h1::after {
     content:"";
-    width: 105%;
+    width: 119%;
     height: 0.7px;
     display: block;
     margin: 0 auto;
     background-color: #ffffff;
-    
+    opacity: 0.7;
 }
 
 .hero-text p {
