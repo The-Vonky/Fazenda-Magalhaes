@@ -17,11 +17,13 @@ header {
     padding: 10px 20px;
     height: 70px;
     z-index: 100;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .logo img {
-    height: 50px;
+    height: 85px;
 }
 
 nav ul {
@@ -33,12 +35,21 @@ nav ul {
 
 nav ul li {
     margin: 0 20px;
+    padding-left: 50px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    color: rgb(154, 154, 154);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .login a {
@@ -57,7 +68,7 @@ nav ul li a {
 
 .header-title {
     text-align: center;
-    margin-top: -30px; /* Ajuste fino para alinhar melhor */
+    margin-top: -36px; /* Ajuste fino para alinhar melhor */
     z-index: 50;
     position: relative;
 }
@@ -93,6 +104,8 @@ nav ul li a {
 .hero-text {
     position: relative;
     z-index: 1;
+    width: 20%;
+    align-content: center;
 }
 
 .hero-text h1 {
@@ -100,6 +113,32 @@ nav ul li a {
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: uppercase;
+}
+
+.hero-text .t2 h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.hero-text h1::after {
+    content:"";
+    width: 80%;
+    height: 1px;
+    display: block;
+    margin: 0 auto;
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+
+.hero-text .t2 h1::after {
+    content:"";
+    width: 105%;
+    height: 0.7px;
+    display: block;
+    margin: 0 auto;
+    background-color: #ffffff;
+    
 }
 
 .hero-text p {
@@ -119,4 +158,55 @@ nav ul li a {
 
 .hero-text button:hover {
     background-color: #888870;
+}
+/******************2º Home**********************/
+.background img {
+    height: 100%;
+    width: 110%;
+    float: right;
+    
+}
+
+.hm ul {
+    list-style-type: none;
+    text-align: justify;
+    color: #000000;
+    padding-top: 10%;
+    padding-left: 15%;
+}
+
+.hm li {
+    padding-top: 50px;
+    font-size: 23px;
+}
+
+.container{
+    display: flex;
+    
+}
+
+.hm {
+    background-color: #ffffff;
+    border-radius: 0 50px 50px 0;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    height: 50rem;
+    width: 50rem;
+    z-index: 1;
+}
+
+.divLogo {
+    background-color: #25FF12;
+    height: 30%;
+    width: 30%;
+    border-radius: 0 0 100px 100px;
+    margin-left: 35%;
+    align-content: flex-end;
+}
+
+.divLogo img {
+    height: 200px;
+    width: 120px;
+    margin-top: 50px;
 }
