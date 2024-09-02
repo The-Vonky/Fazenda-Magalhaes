@@ -255,14 +255,20 @@ nav ul li a:hover {
     margin-top: 20px;
 }
 
-.containerH3 img {
+.image {
+    flex: 1;
+    overflow: hidden;
+    width: max-content;
+}
+
+.division img {
     width: 65%;
     margin-top:30px;
+    transition: 0.5s;
 }
 
 .containerH3 img:hover {
-    overflow: hidden;
-    scale: 1.1; 
+    transform: scale(1.1);
 }
 
 .containerH3::after {
