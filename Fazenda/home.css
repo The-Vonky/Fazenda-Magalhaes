@@ -170,34 +170,6 @@ nav ul li a:hover {
     
 }
 
-.hm ul {
-    list-style-type: none;
-    text-align: justify;
-    color: #000000;
-    padding-top: 7%;
-    padding-left: 10%;
-}
-
-.hm li {
-    padding-top: 50px;
-    font-size: 23px;
-}
-
-.af1 li::after {
-    content: "";
-    width: 64%;
-    height: 0.7px;
-    display: block;
-    margin-left: 18%;
-    background-color: #000000;
-    box-shadow: 10px 3px 7px rgba(0, 0, 0, 0.3);
-}
-
-.container{
-    display: flex;
-    
-}
-
 .hm {
     background-color: #ffffff;
     border-radius: 0 61px 61px 0;
@@ -207,8 +179,46 @@ nav ul li a:hover {
     height: 50rem;
     width: 50rem;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    
 }
-.af1 li{
+
+.hm ul {
+    list-style-type: none;
+    text-align: justify;
+    color: #000000;
+    padding-left: 10%;
+}
+
+.hm li {
+    padding-top: 50px;
+    font-size: 23px;
+}
+
+.hm h1 {
+    text-align: center;
+    margin: auto; 
+    padding-top: 5%;
+    font-size: 35px;
+}
+
+.af1 h1::after {
+    content: "";
+    width: 52%;
+    height: 0.7px;
+    display: block;
+    margin: auto;
+    background-color: #000000;
+    box-shadow: 10px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.teste{
+    display: flex;
+    
+}
+
+.af1 h1{
     text-shadow: 10px 3px 7px rgba(0, 0, 0, 0.3);
 }
 
@@ -217,7 +227,7 @@ nav ul li a:hover {
     height: 30%;
     width: 30%;
     border-radius: 0 0 100px 100px;
-    margin-left: 35%;
+    margin: 0 auto;
     align-content: flex-end;
 }
 
