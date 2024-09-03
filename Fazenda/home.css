@@ -25,6 +25,11 @@ header {
 
 .logo img {
     height: 85px;
+    transition: 0.5s;
+}
+
+.logo img:hover {
+    transform: rotate(360deg);
 }
 
 nav ul {
