@@ -75,7 +75,7 @@ nav ul li a:hover {
 
 .header-title {
     text-align: center;
-    margin-top: -36px; /* Ajuste fino para alinhar melhor */
+    margin-top: -9px; /* Ajuste fino para alinhar melhor */
     z-index: 50;
     position: relative;
 }
@@ -260,6 +260,7 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    margin-top: 10px;
     border-radius: 15px 15px 0 0;
 }
 
@@ -320,17 +321,21 @@ nav ul li a:hover {
     height: 350px;
     background-color: #ffffff;
     margin: 35px auto 0 15%;
-    border-radius: 0 81px 81px 0;
+    border-radius: 0 65px 65px 0;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     justify-content: left;
     align-items: center;
 }
 
 .containerH4 img {
-    width: 24%;
+    width: 47%;
+}
+
+.containerH4 .imgUnited {
+    width: 50%;
     position: absolute;
-    left: 80px;
+    left: 65px;
 }
 
 .container .gradient {
