@@ -73,13 +73,6 @@ nav ul li a:hover {
     color: #333;
 }
 
-.header-title {
-    text-align: center;
-    margin-top: -9px; /* Ajuste fino para alinhar melhor */
-    z-index: 50;
-    position: relative;
-}
-
 .header-title h1 {
     font-size: 2rem;
     font-weight: bold;
