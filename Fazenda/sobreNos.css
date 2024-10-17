@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    padding-top: 70px; /* Espaço para o header fixo */
 }
 
 header {
@@ -46,11 +47,9 @@ nav ul li a {
     font-size: 18px;
     transition: 0.3s;
 }
+
 nav ul li a:hover {
     color: rgb(154, 154, 154);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
 }
 
 .login a {
@@ -67,16 +66,55 @@ nav ul li a:hover {
     color: #333;
 }
 
-.header-title {
+/* Título grande no topo */
+.top-title {
+    padding: 20px;
     text-align: center;
-    margin-top: -36px; /* Ajuste fino para alinhar melhor */
-    z-index: 50;
+}
+
+.top-title h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* Seção de conteúdo principal */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
     position: relative;
 }
 
-.header-title h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
+/* Texto à esquerda */
+.text-section {
+    flex: 1;
+    max-width: 70%;
+}
+
+.text-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.text-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Imagem no canto inferior direito */
+.image-section {
+    bottom: -20px; /* Faz a imagem flutuar no canto inferior */
+    right: 0;      /* Alinha a imagem à direita */
+    width: 40%;    /* Define a largura da imagem */
+}
+
+.image-section img {
+    width: 100%;
+    border-top-left-radius: 200px; /* Efeito arredondado no canto superior esquerdo */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-top: 127px;
+    margin-left: 35px;
 }
