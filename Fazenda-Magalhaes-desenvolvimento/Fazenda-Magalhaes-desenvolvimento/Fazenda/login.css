@@ -10,7 +10,7 @@
     justify-content: center; /* Centraliza os elementos horizontalmente */
     align-items: center; /* Centraliza os elementos verticalmente */
     min-height: 100vh; /* Define a altura mínima do corpo para ocupar toda a altura da tela */
-    background: url("img/010101.webp") no-repeat; /* Define a imagem de fundo e impede a repetição */
+    background: url("img/bannerLogin.webp") no-repeat; /* Define a imagem de fundo e impede a repetição */
     background-size: cover; /* Garante que a imagem de fundo cubra toda a área */
     background-position: center; /* Centraliza a imagem de fundo */
   }

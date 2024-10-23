@@ -124,6 +124,8 @@ nav ul li a:hover {
     bottom: -20px; /* Faz a imagem flutuar no canto inferior */
     right: 0;      /* Alinha a imagem à direita */
     width: 40%;    /* Define a largura da imagem */
+    margin-top: 70px;
+    max-height: none;
 }
 
 .image-section img {
@@ -131,5 +133,11 @@ nav ul li a:hover {
     border-top-left-radius: 200px; /* Efeito arredondado no canto superior esquerdo */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     margin-top: 127px;
-    margin-left: 35px;
+}
+
+.linha-divisao {
+    border: none;
+    height: 2px;
+    background-color: #000;
+    margin: 30px 0;
 }
