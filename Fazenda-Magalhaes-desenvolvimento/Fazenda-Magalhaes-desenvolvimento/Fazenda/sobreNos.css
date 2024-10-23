@@ -5,8 +5,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #FFE4C8;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAF3E0;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
@@ -81,63 +83,98 @@ nav ul li a:hover {
     text-transform: uppercase;
 }
 
-/* Título grande no topo */
 .top-title {
-    padding: 20px;
+    padding: 120px 20px;
     text-align: center;
+    background-color: #EAEAEA;
+    border-bottom: 2px solid #FFD700;
 }
 
 .top-title h1 {
-    font-size: 2rem;
+    font-family: 'Arapey', serif;
+    font-size: 3rem;
     font-weight: bold;
-    color: black;
+    color: #2F4F2F;
 }
 
-/* Seção de conteúdo principal */
 .content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 40px 20px;
-    position: relative;
+    padding: 60px 20px;
+    gap: 50px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-/* Texto à esquerda */
 .text-section {
     flex: 1;
-    max-width: 70%;
 }
 
 .text-section h2 {
     font-size: 2.5rem;
+    color: #2F4F2F;
     margin-bottom: 15px;
 }
 
-.text-section p {
-    font-size: 1rem;
-    line-height: 1.5;
-    text-align: justify;
+.text-section h3 {
+    font-size: 1.8rem;
+    color: #3C763D;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-/* Imagem no canto inferior direito */
+.text-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.text-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.text-section ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.text-section ul li strong {
+    color: #2F4F2F;
+}
+
 .image-section {
-    bottom: -20px; /* Faz a imagem flutuar no canto inferior */
-    right: 0;      /* Alinha a imagem à direita */
-    width: 40%;    /* Define a largura da imagem */
-    margin-top: 70px;
-    max-height: none;
+    flex: 1;
+    max-width: 40%;
 }
 
 .image-section img {
     width: 100%;
-    border-top-left-radius: 200px; /* Efeito arredondado no canto superior esquerdo */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    margin-top: 127px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
 .linha-divisao {
     border: none;
-    height: 2px;
-    background-color: #000;
+    height: 3px;
+    background-color: #FFD700;
     margin: 30px 0;
+}
+
+footer {
+    background-color: #2F4F2F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
 }
