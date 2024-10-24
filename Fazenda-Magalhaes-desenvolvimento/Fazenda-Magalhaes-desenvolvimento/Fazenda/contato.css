@@ -5,8 +5,11 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0ece9;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAF3E0;
+    color: #333;
+    line-height: 1.6;
+    min-height: 120vh;
 }
 
 header {
@@ -84,6 +87,7 @@ body {
 }
 
 .container {
+    margin-top: -60px;
     background-color: #ffffff;
     width: 80%;
     max-width: 1200px;

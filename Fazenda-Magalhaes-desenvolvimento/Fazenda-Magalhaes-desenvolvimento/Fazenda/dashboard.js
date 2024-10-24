@@ -23,7 +23,7 @@ function closeSidebar() {
 const barChartOptions = {
   series: [
     {
-      data: [10, 8, 6, 4, 2],
+      data: [4130, 5778, 4293, 5109, 5707, 4676, 4394],
     },
   ],
   chart: {
@@ -49,11 +49,12 @@ const barChartOptions = {
     show: false,
   },
   xaxis: {
-    categories: ['Laptop', 'Phone', 'Monitor', 'Headphones', 'Camera'],
+    categories: [
+      'Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
   },
   yaxis: {
     title: {
-      text: 'Count',
+      text: 'Litros',
     },
   },
 };
@@ -68,12 +69,12 @@ barChart.render();
 const areaChartOptions = {
   series: [
     {
-      name: 'Purchase Orders',
-      data: [31, 40, 28, 51, 42, 109, 100],
+      name: 'Litros',
+      data: [5161, 4788, 5534, 4284, 5461, 4621, 5318 ],
     },
     {
-      name: 'Sales Orders',
-      data: [11, 32, 45, 32, 34, 52, 41],
+      name: 'Total',
+      data: [4130, 5778, 4293, 5109, 5707, 4676, 4394],
     },
   ],
   chart: {
@@ -90,20 +91,20 @@ const areaChartOptions = {
   stroke: {
     curve: 'smooth',
   },
-  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+  labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
   markers: {
     size: 0,
   },
   yaxis: [
     {
       title: {
-        text: 'Purchase Orders',
+        text: 'Litros',
       },
     },
     {
       opposite: true,
       title: {
-        text: 'Sales Orders',
+        text: 'Litros',
       },
     },
   ],
