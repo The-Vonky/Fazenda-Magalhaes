@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #FFE4C8;
 }
 
 header {
@@ -24,6 +25,12 @@ header {
 
 .logo img {
     height: 85px;
+    transition: 0.5s;
+    padding: 15px;
+}
+
+.logo img:hover {
+    transform: rotate(360deg);
 }
 
 nav ul {
@@ -65,6 +72,13 @@ nav ul li a:hover {
 .login a:hover {
     background-color: white;
     color: #333;
+}
+
+.header-title h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
 }
 
 .header-title {

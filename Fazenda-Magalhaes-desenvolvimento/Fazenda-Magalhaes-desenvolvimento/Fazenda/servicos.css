@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #FFE4C8;
 }
 
 header {
@@ -24,6 +25,12 @@ header {
 
 .logo img {
     height: 85px;
+    transition: 0.5s;
+    padding: 15px;
+}
+
+.logo img:hover {
+    transform: rotate(360deg);
 }
 
 nav ul {
@@ -65,13 +72,6 @@ nav ul li a:hover {
 .login a:hover {
     background-color: white;
     color: #333;
-}
-
-.header-title {
-    text-align: center;
-    margin-top: -36px; /* Ajuste fino para alinhar melhor */
-    z-index: 50;
-    position: relative;
 }
 
 .header-title h1 {
