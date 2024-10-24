@@ -5,36 +5,31 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FAF3E0;
-    color: #333;
-    line-height: 1.6;
-    min-height: 120vh;
+    font-family: Arial, sans-serif;
+    background-color: #FFE4C8;
 }
 
 header {
-    background: linear-gradient(135deg, #333, #5a5a5a);
+    background-color: #333;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     height: 70px;
+    z-index: 100;
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .logo img {
     height: 85px;
-    transition: transform 0.6s ease;
-    padding: 15px;
+    transition: 0.5s;
 }
 
 .logo img:hover {
-    transform: rotate(360deg) scale(1.1);
+    transform: rotate(360deg);
 }
 
 nav ul {
@@ -55,11 +50,13 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
-    transition: 0.4s ease-in-out;
+    transition: 0.3s;
 }
-
 nav ul li a:hover {
-    color: #f1c40f;
+    color: rgb(154, 154, 154);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .login a {
@@ -68,13 +65,12 @@ nav ul li a:hover {
     padding: 5px 15px;
     border: 2px solid white;
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .login a:hover {
-    background-color: #f1c40f;
+    background-color: white;
     color: #333;
-    transform: scale(1.1);
 }
 
 .header-title h1 {
@@ -94,7 +90,6 @@ nav ul li a:hover {
     color: #FFE4C8;
     text-align: center;
     overflow: hidden;
-    margin-top: 50px;
 }
 
 .overlay {
@@ -124,6 +119,9 @@ nav ul li a:hover {
     margin-left: 45px;
 }
 
+/*.hero-text .t2 h1 {
+   
+} */
 .hero-text .t1 h1::after {
     content:"";
     width: 83%;
@@ -234,11 +232,9 @@ nav ul li a:hover {
 }
 
 .divLogo img {
-    height: 130px;
-    width: 200px;
-    margin-top: 10px;
-    padding-right: 15px;
-    padding-bottom: 20px;
+    height: 200px;
+    width: 120px;
+    margin-top: 50px;
 }
 
 /**************** 3º Home *******************/
@@ -327,7 +323,6 @@ nav ul li a:hover {
 
 .containerH4 img {
     width: 47%;
-    border-radius: 99px;
 }
 
 .containerH4 .imgUnited {
@@ -398,4 +393,16 @@ nav ul li a:hover {
 .text2 p {
     margin: 51px 0 0 0;
     text-align: center;
+}
+.carousel-inner{
+    padding-top: 20px;
+    display: flex;
+    justify-content:center ;
+    padding-right: 1100px;
+}
+
+.videos {
+    width: 1100px;
+    height: 1000px;
+    
 }
