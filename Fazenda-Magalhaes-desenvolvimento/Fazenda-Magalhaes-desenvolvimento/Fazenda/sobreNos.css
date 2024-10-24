@@ -12,27 +12,28 @@ body {
 }
 
 header {
-    background-color: #333;
+    background: linear-gradient(135deg, #333, #5a5a5a);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     height: 70px;
-    z-index: 100;
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .logo img {
     height: 85px;
-    transition: 0.5s;
+    transition: transform 0.6s ease;
     padding: 15px;
 }
 
 .logo img:hover {
-    transform: rotate(360deg);
+    transform: rotate(360deg) scale(1.1);
 }
 
 nav ul {
@@ -53,13 +54,11 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
-    transition: 0.3s;
+    transition: 0.4s ease-in-out;
 }
+
 nav ul li a:hover {
-    color: rgb(154, 154, 154);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
+    color: #f1c40f;
 }
 
 .login a {
@@ -68,12 +67,13 @@ nav ul li a:hover {
     padding: 5px 15px;
     border: 2px solid white;
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 .login a:hover {
-    background-color: white;
+    background-color: #f1c40f;
     color: #333;
+    transform: scale(1.1);
 }
 
 .header-title h1 {
@@ -88,6 +88,7 @@ nav ul li a:hover {
     text-align: center;
     background-color: #EAEAEA;
     border-bottom: 2px solid #FFD700;
+    margin-top: 50px;
 }
 
 .top-title h1 {
@@ -105,6 +106,7 @@ nav ul li a:hover {
     gap: 50px;
     max-width: 1200px;
     margin: auto;
+    margin-top: -35px;
 }
 
 .text-section {
@@ -156,6 +158,7 @@ nav ul li a:hover {
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+    margin-top: 140px;
 }
 
 .linha-divisao {
