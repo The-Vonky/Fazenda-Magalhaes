@@ -47,7 +47,8 @@ nav a {
     color: white;
     padding: 10px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
+    border-radius: 5px;
 }
 
 nav a:hover {
@@ -62,7 +63,7 @@ nav a {
     color: white;
     padding: 10px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 nav a:hover {
@@ -118,7 +119,7 @@ footer {
     margin-top: 40px;
     border-top: 1px solid #e0e0e0;
 }
-
+/********************************************/
 .miniCont {
     width: 70%;
     height: 70px;
@@ -165,13 +166,72 @@ footer {
     padding: 25px 0 0 0;
 }
 
-.sub1 li{
-    padding-right: 75%;
-    padding-bottom: 30px;
+.subUnited {
+    margin-top: 0;
+}
+
+.subUnited p{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.sub1 {
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+    width: 85%;
+    height: 70px;
+    cursor: pointer;
     background-color: #004d99;
     color: #FFFFFF;
-    text-decoration: none;
-    align-content: center;
-    border-radius: 25px;
-    text-align: center;
+    border-radius: 50px;
+    transition: 0.3s ease;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
 }
+
+/*.sub2 {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    cursor: pointer;
+    background-color: #004d99;
+    color: #FFFFFF;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.sub3 {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    cursor: pointer;
+    background-color: #004d99;
+    color: #FFFFFF;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}*/
+
+.container .sub1:hover {
+    background-color: #1a3e70;
+    border-radius: 50px;
+    box-shadow: none;
+}
+
+.container .sub1:active {
+    background-color: #1a3e70;
+    border-radius: 50px;
+    box-shadow: none;
+}
+
+/*.container .sub2:hover {
+    background-color: #1a3e70;
+    border-radius: 25px;
+}
+
+.container .sub3:hover {
+    background-color: #1a3e70;
+    border-radius: 25px;
+}*/
+
