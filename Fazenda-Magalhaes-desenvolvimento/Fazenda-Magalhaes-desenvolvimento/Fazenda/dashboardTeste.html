@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Fazenda Magalhães</title>
     <!-- MATERIAL CDN-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Alterado para material-icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--STYLESHEET-->
     <link rel="stylesheet" href="./dashboardTeste.css">
 </head>
 <body>
+    
     <div class="container">
         <aside>
             <div class="top">
@@ -19,46 +20,46 @@
                     <h2>Fazenda<span class="danger"> Magalhães</span></h2>
                 </div>
                 <div class="close" id="close-btn">
-                    <span class="material-icons">close</span> <!-- Alterado para material-icons -->
+                    <span class="material-icons">close</span>
                 </div>
             </div>
 
             <div class="sidebar">
                 <a href="dashboard.html" class="active">
-                    <span class="material-icons">grid_view</span> <!-- Alterado para material-icons -->
+                    <span class="material-icons">grid_view</span>
                     <h3>Dashboard</h3>
                 </a>
                 <a href="relatório.html">
-                    <span class="material-icons">receipt_long</span> <!-- Alterado para material-icons -->
+                    <span class="material-icons">receipt_long</span>
                     <h3>Relatórios</h3>
                 </a>
                 <a href="análises.htm">
-                    <span class="material-icons">insights</span> <!-- Alterado para material-icons -->
+                    <span class="material-icons">insights</span>
                     <h3>Análise</h3>
                 </a>
                 <a href="#">
-                    <span class="material-icons">mail_outline</span> <!-- Alterado para material-icons -->
+                    <span class="material-icons">mail_outline</span>
                     <h3>Mensagens</h3>
                     <span class="message-count">26</span>
                 </a>
                 <a href="#">
-                    <span class="material-icons">inventory</span> <!-- Alterado para material-icons -->
+                    <span class="material-icons">inventory</span>
                     <h3>Produção</h3>
                 </a>
                 <a href="#">
-                    <span class="material-icons">report_problem</span> <!-- Alterado para material-icons -->
+                    <span class="material-icons">report_problem</span>
                     <h3>Alertas</h3>
                 </a>
                 <a href="#">
-                    <span class="material-icons">settings</span> <!-- Alterado para material-icons -->
+                    <span class="material-icons">settings</span>
                     <h3>Configurações</h3>
                 </a>
                 <a href="#">
-                    <span class="material-icons">add</span> <!-- Alterado para material-icons -->
+                    <span class="material-icons">add</span>
                     <h3>Adicionar Função</h3>
                 </a>
                 <a href="#">
-                    <span class="material-icons">logout</span> <!-- Alterado para material-icons -->
+                    <span class="material-icons">logout</span>
                     <h3>Logout</h3>
                 </a>
             </div>
@@ -72,11 +73,11 @@
         
             <div class="insights">
                 <div class="sales">
-                    <span class="material-icons">analytics</span> <!-- Alterado para material-icons -->
+                    <span class="material-icons">analytics</span>
                     <div class="middle">
                         <div class="left">
-                            <h3>Total Sales</h3>
-                            <h1>$25,024</h1>
+                            <h3>Total de Animais em Produção:</h3>
+                            <h1>208/257</h1>
                         </div>
                         <div class="progress">
                             <svg>
@@ -87,15 +88,15 @@
                             </div>
                         </div>
                     </div>
-                    <small class="text-muted">Last 24 Hours</small>
+                    <small class="text-muted">Últimas 24h</small>
                 </div>
                 <!-------------------- END OF SALES -------------------->
                 <div class="expenses">
-                    <span class="material-icons">bar_chart</span> <!-- Alterado para material-icons -->
+                    <span class="material-icons">bar_chart</span>
                     <div class="middle">
                         <div class="left">
-                            <h3>Total Expenses</h3>
-                            <h1>$14,160</h1>
+                            <h3>Total de Leite Produzido Hoje:</h3>
+                            <h1>3.720L/6.000L</h1>
                         </div>
                         <div class="progress">
                             <svg>
@@ -106,15 +107,15 @@
                             </div>
                         </div>
                     </div>
-                    <small class="text-muted">Last 24 Hours</small>
+                    <small class="text-muted">Últimas 24h</small>
                 </div>
                 <!-------------------- END OF EXPENSES -------------------->
                 <div class="income">
-                    <span class="material-icons">stacked_line_chart</span> <!-- Alterado para material-icons -->
+                    <span class="material-icons">stacked_line_chart</span>
                     <div class="middle">
                         <div class="left">
-                            <h3>Total Income</h3>
-                            <h1>$10,864</h1>
+                            <h3>Média da Produção do Mês:</h3>
+                            <h1>73.653L</h1>
                         </div>
                         <div class="progress">
                             <svg>
@@ -125,58 +126,58 @@
                             </div>
                         </div>
                     </div>
-                    <small class="text-muted">Last 24 Hours</small>
+                    <small class="text-muted">Últimas 24h</small>
                 </div>
                 <!-------------------- END OF INCOME -------------------->
             </div>
              <!-------------------- END OF INSIGHTS -------------------->
              <div class="recent-orders">
-                <h2>Recent Order</h2>
+                <h2>Tabela de Produção:</h2>
                 <table>
                     <thead>
                         <tr>
-                            <th>Product Name</th>
-                            <th>Product Number</th>
-                            <th>Payment</th>
+                            <th>Nome da Vaca</th>
+                            <th>Número do Brinco</th>
+                            <th>Lote</th>
                             <th>Status</th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Foldable Mini Drone</td>
+                            <td>Mimosa</td>
                             <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
+                            <td>1</td>
+                            <td class="warning">Produzindo</td>
+                            <td class="primary">Detalhes</td>
                         </tr>
                         <tr>
-                            <td>Foldable Mini Drone</td>
+                            <td>Mimosa</td>
                             <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
+                            <td>3</td>
+                            <td class="warning">Produzindo</td>
+                            <td class="primary">Detalhes</td>
                         </tr>
                         <tr>
-                            <td>Foldable Mini Drone</td>
+                            <td>Mimosa</td>
                             <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
+                            <td>2</td>
+                            <td class="warning">Produzindo</td>
+                            <td class="primary">Detalhes</td>
                         </tr>
                         <tr>
-                            <td>Foldable Mini Drone</td>
+                            <td>Mimosa</td>
                             <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
+                            <td>1</td>
+                            <td class="warning">Produzindo</td>
+                            <td class="primary">Detalhes</td>
                         </tr>
                         <tr>
-                            <td>Foldable Mini Drone</td>
+                            <td>Mimosa</td>
                             <td>85631</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
+                            <td>1</td>
+                            <td class="warning">Produzindo</td>
+                            <td class="primary">Detalhes</td>
                         </tr>
                     </tbody>
                 </table>
@@ -194,7 +195,7 @@
                 </div>
                 <div class="profile">
                     <div class="info">
-                        <p>Hey, <b>Deywid</b></p>
+                        <p>Olá, <b>Deywid</b></p>
                         <small class="text-muted">Admin</small>
                     </div>
                     <div class="profile-photo">
@@ -204,15 +205,15 @@
             </div>
             <!-- END OF TOP -->
             <div class="recent-updates">
-                <h2>Recent Updates</h2>
+                <h2>Atualizações Recentes</h2>
                 <div class="updates">
                     <div class="update">
                         <div class="profile-photo">
                             <img src="img/Logo.png">
                         </div>
                         <div class="message">
-                            <p><b>Mike Tyson</b> reiceved his order of Night lion tech GPS drone.</p>
-                            <small class="text-muted">2 Minutes Ago</small>
+                            <p><b>Call</b> retirou 5.523L hoje (24/10)</p>
+                            <small class="text-muted">9 horas atrás</small>
                         </div>
                     </div>
                     <div class="update">
@@ -220,8 +221,8 @@
                             <img src="img/Logo.png">
                         </div>
                         <div class="message">
-                            <p><b>Mike Tyson</b> reiceved his order of Night lion tech GPS drone.</p>
-                            <small class="text-muted">2 Minutes Ago</small>
+                            <p><b>Call</b> retirou 5.523L hoje (24/10)</p>
+                            <small class="text-muted">9 horas atrás</small>
                         </div>
                     </div>
                     <div class="update">
@@ -229,8 +230,8 @@
                             <img src="img/Logo.png">
                         </div>
                         <div class="message">
-                            <p><b>Mike Tyson</b> reiceved his order of Night lion tech GPS drone.</p>
-                            <small class="text-muted">2 Minutes Ago</small>
+                            <p><b>Call</b> retirou 5.523L hoje (24/10)</p>
+                            <small class="text-muted">9 horas atrás</small>
                         </div>
                     </div>
                     <div class="update">
@@ -238,8 +239,8 @@
                             <img src="img/Logo.png">
                         </div>
                         <div class="message">
-                            <p><b>Mike Tyson</b> reiceved his order of Night lion tech GPS drone.</p>
-                            <small class="text-muted">2 Minutes Ago</small>
+                            <p><b>Call</b> retirou 5.523L hoje (24/10)</p>
+                            <small class="text-muted">9 horas atrás</small>
                         </div>
                     </div>
                     <div class="update">
@@ -247,8 +248,8 @@
                             <img src="img/Logo.png">
                         </div>
                         <div class="message">
-                            <p><b>Mike Tyson</b> reiceved his order of Night lion tech GPS drone.</p>
-                            <small class="text-muted">2 Minutes Ago</small>
+                            <p><b>Call</b> retirou 5.523L hoje (24/10)</p>
+                            <small class="text-muted">9 horas atrás</small>
                         </div>
                     </div>
                 </div>
