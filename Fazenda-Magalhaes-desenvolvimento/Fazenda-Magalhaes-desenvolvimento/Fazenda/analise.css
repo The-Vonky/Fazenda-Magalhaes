@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .header {
+    background-color: #003366;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #004080;
+    border-radius: 5px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: auto;
+    height: 100vh;
+  }
+  
+  .main-container {
+    grid-area: main;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Cards e gráficos em coluna */
+  }
+  
+  .main-title {
+    margin-bottom: 20px;
+  }
+  
+  .font-weight-bold {
+    font-weight: bold;
+    font-size: 24px; /* Tamanho da fonte do título */
+  }
+  
+  .main-cards {
+    display: flex;
+    flex-direction: row; /* Cards em linha */
+    gap: 20px; /* Espaçamento entre os cards */
+    margin-bottom: 20px; /* Espaçamento abaixo dos cards */
+  }
+  
+  .card {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #d2d2d3;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Para que todos os cards ocupem a mesma largura */
+  }
+  
+  .card-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .text-primary {
+    color: #003366;
+  }
+  
+  .font-weight-bold {
+    font-weight: bold;
+    font-size: 32px; /* Tamanho da fonte do número no card */
+  }
+  
+  .charts {
+    display: flex;
+    flex-direction: row; /* Gráficos em linha */
+    gap: 20px; /* Espaçamento entre os gráficos */
+  }
+  
+  .charts-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border: 1px solid #d2d2d3;
+    border-radius: 5px;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+    flex: 1; /* Para que todos os gráficos ocupem a mesma largura */
+  }
+  
+  .chart-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .text-blue {
+    color: #007bff; /* Azul */
+  }
+  
+  .text-orange {
+    color: #ff9800; /* Laranja */
+  }
+  
+  .text-green {
+    color: #4caf50; /* Verde */
+  }
