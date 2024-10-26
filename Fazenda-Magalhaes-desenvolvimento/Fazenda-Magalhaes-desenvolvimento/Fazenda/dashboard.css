@@ -150,12 +150,17 @@ aside .top {
 
 aside .logo {
     display: flex;
-    gap: 0.8rem;
+    flex-direction: column; /* Coloca o texto abaixo da logo */
+    align-items: center; /* Centraliza a logo e o texto */
+    text-align: center; /* Alinha o texto ao centro */
+    margin-bottom: 20px; /* Dá espaço após o conjunto logo + texto */
 }
 
 aside .logo img {
-    width: 2rem;
-    height: 2rem;
+    margin-left: 47px;
+    width: 120px; /* Aumente o valor conforme desejado para ajustar o tamanho */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaço entre a logo e o texto */
 }
 
 aside .close {
@@ -171,6 +176,7 @@ aside .sidebar {
     height: 86vh;
     position: relative;
     top: 3rem;
+    transform: translateY(-60px);
 }
 
 aside h3 {
@@ -655,6 +661,7 @@ main .recent-orders a {
         position: relative;
         margin: 3rem 0 0 0;
         width: 100%;
+        margin-left: -14rem;
     }
 
     main .recent-orders table {
