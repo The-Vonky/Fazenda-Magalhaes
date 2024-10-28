@@ -10,6 +10,10 @@ body {
     color: #333;
     line-height: 1.6;
     min-height: 120vh;
+    background: url(img/bannerLogin.webp) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 header {
@@ -75,4 +79,178 @@ nav ul li a:hover {
     background-color: #f1c40f;
     color: #333;
     transform: scale(1.1);
+}
+/**************************************************************/
+.textos {
+    margin: 18vw auto 0;
+    text-align: center;
+    align-content: center;
+    color: #FFFFFF;
+    max-width: 75%;
+}
+
+.textos h1 {
+    font-size: 5vw;
+    margin-bottom: 20px;
+}
+
+.btn {
+    min-width: 15vw;
+    min-height: 3vw;
+    max-width: 18vw;
+    max-height: 3vh;
+    background-color: #FFFFFF transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 100px auto 300px;
+    border-radius: 20px;
+    cursor: pointer;
+    align-content: center;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f1c40f;
+    border: none;
+    color: #000;
+}
+/*******************Seção 2*************************/
+.stn2 {
+    background-color: #FFFFFF;
+}
+
+.title {
+    text-align: center;
+    color: #333;
+    font-size: 2vw;
+    margin-bottom: 50px;
+}
+
+.united {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 7vw;
+}
+
+.united h1 {
+    font-size: 2.5vw;
+}
+
+.cont1 {
+    width: 20vw;
+    height: 35vw;
+    background-color: #FAF3E0;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e5e5e5;
+}
+
+/*.cont2 {
+    width: 20vw;
+    height: 35vw;
+    background-color: #FAF3E0;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cont3 {
+    width: 20vw;
+    height: 35vw;
+    background-color: #FAF3E0;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}*/
+
+.image {
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.image img {
+    display: block;
+    width: 17vw;
+    transition: 0.4s ease;
+}
+
+.image img:hover {
+    transform: scale(1.2);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 750px) {
+
+    .textos h1 {
+        font-size: 10vw;
+    }
+
+    .textos {
+        margin: 30vw auto 0;
+    }
+
+    .btn {
+        min-width: 60vw;
+        min-height: 10vh;
+        font-size: 3vw;
+    }
+    /**************Seção 2*************/
+    .title {
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .united {
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .united h1 {
+        font-size: 5vw;
+    }
+
+    .cont1 {
+        width: 20em;
+        height: 27em;
+        margin-top: 5vw;
+        padding: 10px;
+    }
+
+    /*.cont2 {
+        width: 20em;
+        height: 27em;
+    }
+
+    .cont3 {
+        width: 20em;
+        height: 27em;
+    }*/
+
+    .image img {
+        min-width: 50vw;
+    }
 }
