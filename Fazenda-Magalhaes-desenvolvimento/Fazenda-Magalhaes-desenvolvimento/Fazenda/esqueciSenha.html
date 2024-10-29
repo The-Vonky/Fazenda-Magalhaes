@@ -2,39 +2,23 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <!-- Define a codificação de caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Define a escala inicial e a largura da viewport -->
     <title>Login</title>
-    <!-- Define o título da página -->
-    <link rel="stylesheet" href="esqueciSenha.css" />
-    <!-- Link para o arquivo CSS externo -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
-    <!-- Link para o arquivo de ícones Boxicons -->
+    <link rel="stylesheet" href="css/esqueciSenha.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
   </head>
+  
   <body>
     <div class="wrapper">
-      <!-- Define uma div com a classe "wrapper" -->
       <form action="enviar_reset.php">
-        <!-- Define um formulário com a ação de redirecionar para "index.html" -->
         <h1>Redefinir senha</h1>
-        <!-- Título do formulário -->
         <div class="input-box">
-          <!-- Define uma div com a classe "input-box" -->
           <input type="email" placeholder="Email" required />
-          <!-- Campo de entrada para o nome de usuário -->
           <i class="bx bxs-user"></i>
-          <!-- Ícone de usuário -->
         </div>
-
         <button type="submit" class="btn">Redefinir Senha</button>
-        <!-- Botão de login -->
-
         <div class="register-link">
-          <!-- Define uma div com a classe "register-link" -->
           <p>Não tem uma conta? <a href="crieConta.html">Crie uma</a></p>
-          <!-- Texto e link para criar uma conta -->
         </div>
       </form>
     </div>
