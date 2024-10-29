@@ -189,6 +189,34 @@ nav ul li a:hover {
     transform: scale(1.2);
 
 }
+/******************Footer**************************/
+footer {
+    width: 100%;
+    min-height: 11em;
+    max-height: 20em;
+    background-color: #1a1a1a;
+    border-right: 27px solid #000;
+    border-bottom: 25px solid #000;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+}
+
+.txt {
+    margin: 20px 0 0 0;
+    width: 50%;
+    min-height: 7em;
+    max-height: 20em;
+    text-align: center;
+}
+
+.txt h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
 
 @media only screen and (max-width: 750px) {
 
@@ -240,5 +268,18 @@ nav ul li a:hover {
 
     .image img {
         min-width: 50vw;
+    }
+
+    /***************Footer******************/
+    .txt {
+        width: 80%;
+    }
+
+    .txt h1 {
+        font-size: 23px;
+    }
+
+    .txt p {
+        font-size: 13px;
     }
 }
