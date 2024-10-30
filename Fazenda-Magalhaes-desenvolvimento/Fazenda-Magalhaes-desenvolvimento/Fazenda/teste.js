@@ -1,4 +1,4 @@
-const box = document.querySelector(".container");
+const box = document.querySelector("");
 const imagens = document.querySelectorAll(".container img");
 
 let contador = 0;
