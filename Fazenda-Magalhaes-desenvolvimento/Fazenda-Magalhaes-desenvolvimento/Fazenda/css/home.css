@@ -110,6 +110,7 @@ nav ul li a:hover {
     align-content: center;
     font-family: Abril Fatface;
     margin-left: 23px;
+    animation: fadeIn 1.0s ease-in-out;
 }
 
 .hero-text h1 {
@@ -117,6 +118,11 @@ nav ul li a:hover {
     font-weight: bold;
     margin-bottom: 10px;
     text-transform: uppercase;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); transform: scale(1.1); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .hero-text .t1 h1 {
