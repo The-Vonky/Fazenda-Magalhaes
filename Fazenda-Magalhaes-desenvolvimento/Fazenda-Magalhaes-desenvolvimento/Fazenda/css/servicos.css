@@ -49,8 +49,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px;
-    padding-left: 50px;
+    margin: 0 50px;
     align-self: center;
 }
 
@@ -130,12 +129,12 @@ nav ul li a:hover {
 }
 /*******************Seção 2*************************/
 .stn2 {
-    background-color: #FFFFFF;
+    background-color: #EAEAEA;
 }
 
 .title {
     text-align: center;
-    color: #333;
+    color: #2F4F2F;
     font-size: 2vw;
     margin-bottom: 50px;
 }

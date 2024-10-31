@@ -45,8 +45,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px;
-    padding-left: 50px;
+    margin: 0 50px;
     align-self: center;
 }
 
@@ -110,7 +109,7 @@ nav ul li a:hover {
     text-align: left;
     align-content: center;
     font-family: Abril Fatface;
-    
+    margin-left: 23px;
 }
 
 .hero-text h1 {
@@ -187,11 +186,18 @@ nav ul li a:hover {
 }
 
 .hm ul {
-    list-style-type: none;
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 10 10"><circle fill="rgb(37, 255, 18)" cx="7" cy="5" r="2.5"/></svg>');
+    margin-left: 100px;
     text-align: justify;
     color: #000000;
-    padding-left: 10%;
+
 }
+
+/*.hm ul li::before {
+    content: '\2023';
+    margin: 0 2px;
+    color: #25FF12;
+}*/
 
 .hm li {
     padding-top: 50px;
