@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotes - Fazenda Magalhães</title>
+    <link rel="stylesheet" href="css/producao.css">
+    <!-- MATERIAL CDN-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="img/Logo.png" alt="Logo da Empresa"><br>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="dashboard.html">
+                    <span class="material-icons">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="relatorio.html">
+                    <span class="material-icons">receipt_long</span>
+                    <h3>Relatórios</h3>
+                </a>
+                <a href="analise.html">
+                    <span class="material-icons">insights</span>
+                    <h3>Análise</h3>
+                </a>
+                <a href="producao.html" class="active">
+                    <span class="material-icons">inventory</span>
+                    <h3>Produção</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">add</span>
+                    <h3>Adicionar Função</h3>
+                </a>
+                <a href="home.html">
+                    <span class="material-icons">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Relatórios</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+        </main>
+        <!-------------------- END OF MAIN -------------------->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons active">light_mode</span>
+                    <span class="material-icons">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Olá, <b>Deywid</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="img/jorel.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- END OF TOP -->
+
+        <!-- Lote 1 -->
+    <div class="lotes-ativos">
+        <a href="lote1.html" class="lote">
+            <h1>Lote 1</h1>
+            <h2>Total de Animais em Produção</h2>
+            <span class="numero">60</span>
+            <span class="seta">&#9660;</span>
+        </a>
+        
+        <!-- Lote 2 -->
+        <a href="lote2.html" class="lote">
+            <h1>Lote 1</h1>
+            <h2>Total de Animais em Produção</h2>
+            <span class="numero">60</span>
+            <span class="seta">&#9660;</span>
+        </a>
+        
+        <!-- Lote 3 -->
+        <a href="lote3.html" class="lote">
+            <h1>Lote 1</h1>
+            <h2>Total de Animais em Produção</h2>
+            <span class="numero">60</span>
+            <span class="seta">&#9660;</span>
+        </a>
+        
+        <!-- Botão de Editar -->
+        <button class="editar">
+            Editar <span class="icone">&#9998;</span>
+        </button>
+    </div>
+        </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

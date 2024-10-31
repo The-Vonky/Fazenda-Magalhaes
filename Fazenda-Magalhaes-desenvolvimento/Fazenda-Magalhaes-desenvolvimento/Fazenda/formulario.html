@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de Dados Diários</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 600px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Envio de Dados Diários</h1>
+    <form action="/enviar-dados" method="POST">
+        <!-- Campo para data -->
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+
+        <!-- Campo para volume total produzido no dia -->
+        <label for="volume">Volume Total do Dia (em litros):</label>
+        <input type="number" id="volume" name="volume" step="0.01" required>
+
+        <!-- Campo para quantidade de animais ordenhados -->
+        <label for="animais">Quantidade de Animais Ordenhados:</label>
+        <input type="number" id="animais" name="animais" required>
+
+        <!-- Campo para observações adicionais -->
+        <label for="observacoes">Observações (opcional):</label>
+        <textarea id="observacoes" name="observacoes" rows="4" placeholder="Adicionar comentários importantes..."></textarea>
+
+        <!-- Botão de envio -->
+        <input type="submit" value="Salvar e Enviar">
+    </form>
+</body>
+</html>
