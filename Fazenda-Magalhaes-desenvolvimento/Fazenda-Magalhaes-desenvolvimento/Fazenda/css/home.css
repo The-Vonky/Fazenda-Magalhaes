@@ -211,15 +211,16 @@ nav ul li a:hover {
 }
 
 .hm h1 {
+    font-family: 'Arapey', serif;
     text-align: center;
     margin: auto; 
     padding-top: 5%;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .af1 h1::after {
     content: "";
-    width: 52%;
+    width: 47%;
     height: 0.7px;
     display: block;
     margin: auto;
@@ -233,7 +234,7 @@ nav ul li a:hover {
 }
 
 .af1 h1{
-    text-shadow: 10px 3px 7px rgba(0, 0, 0, 0.3);
+    text-shadow: 7px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .divLogo {
@@ -337,11 +338,19 @@ nav ul li a:hover {
     align-items: center;
 }
 
-.containerH4 img {
-    width: 50%;
+.containerH4 .img1 {
+    width: 49%;
     height: 360px;
     border-radius: 200px;
 }
+
+.container .img2 {
+    position: absolute;
+    margin-left: -25em;
+    width: 60%;
+    margin-top: 40px;
+}
+
 
 .containerH4 .imgUnited {
     width: 50%;
