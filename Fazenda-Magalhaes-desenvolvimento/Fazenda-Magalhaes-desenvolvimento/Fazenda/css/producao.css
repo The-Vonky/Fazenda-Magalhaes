@@ -754,12 +754,9 @@ body {
 }
 
 .lotes-ativos {
-    margin-left: 140px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 60px; /* Mais espaço entre os cards */
-    padding: 100px 0; /* Ajuste da margem superior e inferior */
+    display: flex; /* Alinha os cards horizontalmente */
+    gap: 1.8rem; /* Espaçamento entre os cards, ajuste conforme necessário */
+    flex-wrap: wrap; /* Permite que os cards quebrem linha se não houver espaço suficiente */
 }
 
 .lote {
