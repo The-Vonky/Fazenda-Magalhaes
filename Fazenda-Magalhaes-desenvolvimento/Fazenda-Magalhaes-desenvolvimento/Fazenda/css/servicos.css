@@ -204,30 +204,17 @@ nav ul li a:hover {
 }
 /******************Footer**************************/
 footer {
-    width: 100%;
-    min-height: 11em;
-    max-height: 20em;
-    background-color: #1a1a1a;
-    border-right: 27px solid #000;
-    border-bottom: 25px solid #000;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 30px;
-}
-
-.txt {
-    margin: 20px 0 0 0;
-    width: 50%;
-    min-height: 7em;
-    max-height: 20em;
+    background-color: #2F4F2F;
+    color: white;
     text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
 }
 
-.txt h1 {
-    font-size: 25px;
-    margin-bottom: 20px;
+footer p {
+    margin: 0;
+    font-size: 1rem;
 }
 
 

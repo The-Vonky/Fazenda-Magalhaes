@@ -368,36 +368,18 @@ nav ul li a:hover {
 }
 /************************FOOTER**************************/
 
-.ftr .container {
+footer {
+    background-color: #2F4F2F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
     width: 100%;
-    height: 250px;
-    background-color: #1a1a1a;
-    border-right: 35px solid #000000;
-    border-bottom: 35px solid #000000;
-    color: #ffffff;
-    display: inline-block;
-    opacity: 100%;
 }
 
-.ftr .text {
-    width: 40%;
-    margin: 30px auto;
-    text-align: center;
-    line-height: 30px;
-}
-
-.ftr h2 {
-    margin-bottom: 20px;
-}
-
-.ftr .text2 {
-    position: absolute;
-    width: 97%;
-}
-
-.text2 p {
-    margin: 51px 0 0 0;
-    text-align: center;
+footer p {
+    margin: 0;
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 750px){
