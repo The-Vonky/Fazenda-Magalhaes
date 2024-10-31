@@ -9,7 +9,6 @@ body {
     background-color: #FAF3E0;
     color: #333;
     line-height: 1.6;
-    min-height: 120vh;
 }
 
 header {
@@ -79,7 +78,6 @@ nav ul li a:hover {
 
 /* Estilos da página de contato */
 body {
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f0ece9;
@@ -87,7 +85,7 @@ body {
 }
 
 .container {
-    margin-top: -60px;
+    margin: auto;
     background-color: #ffffff;
     width: 80%;
     max-width: 1200px;
@@ -216,4 +214,18 @@ body {
 
 .contact-form button[type="reset"]:hover {
     background-color: #ccc;
+}
+
+footer {
+    background-color: #2F4F2F;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
 }
