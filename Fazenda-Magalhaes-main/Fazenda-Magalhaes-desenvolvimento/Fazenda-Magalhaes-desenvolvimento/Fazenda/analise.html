@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/analise.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="img/Logo.png" alt="Logo da Empresa"><br>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="dashboard.html">
+                    <span class="material-icons">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="relatorio.html">
+                    <span class="material-icons">receipt_long</span>
+                    <h3>Relatórios</h3>
+                </a>
+                <a href="analise.html" class="active">
+                    <span class="material-icons">insights</span>
+                    <h3>Análise</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">mail_outline</span>
+                    <h3>Mensagens</h3>
+                    <span class="message-count">26</span>
+                </a>
+                <a href="lotes.html">
+                    <span class="material-icons">inventory</span>
+                    <h3>Produção</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">report_problem</span>
+                    <h3>Alertas</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">settings</span>
+                    <h3>Configurações</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons">add</span>
+                    <h3>Adicionar Função</h3>
+                </a>
+                <a href="home.html">
+                    <span class="material-icons">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Analise Geral</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+        </main>
+        <!-------------------- END OF MAIN -------------------->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons active">light_mode</span>
+                    <span class="material-icons">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Olá, <b>Deywid</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="img/Teste.gif">
+                    </div>
+                </div>
+            </div>
+            <!-- END OF TOP -->
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <main class="main-container">
+
+            <div class="main-cards">
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">Total de Animais em Produção</p>
+                        <span class="material-icons-outlined text-blue">inventory_2</span>
+                    </div>
+                    <span class="text-primary font-weight-bold">182</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">Total de Leite Produzido Hoje</p>
+                        <span class="material-icons-outlined text-orange">add_shopping_cart</span>
+                    </div>
+                    <span class="text-primary font-weight-bold">5.524</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary">Média da Produção de Leite no Último Mês</p>
+                        <span class="material-icons-outlined text-green">shopping_cart</span>
+                    </div>
+                    <span class="text-primary font-weight-bold">73.653</span>
+                </div>
+            </div>
+
+            <div class="charts">
+                <div class="charts-card">
+                    <p class="chart-title">Produção de Leite Desta Semana:</p>
+                    <div id="bar-chart"></div>
+                </div>
+
+                <div class="charts-card">
+                    <p class="chart-title">Produção dos Últimos Meses:</p>
+                    <div id="area-chart"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <script src="js/analise.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
