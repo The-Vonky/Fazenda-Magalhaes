@@ -1,53 +1,125 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Envio de Dados Diários</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            max-width: 600px;
-        }
-        label {
-            display: block;
-            margin-top: 10px;
-        }
-        input[type="submit"] {
-            margin-top: 20px;
-            padding: 10px 15px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>Atualização de Dados de Produção - Fazenda Magalhães</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/formulario.css">
 </head>
 <body>
-    <h1>Envio de Dados Diários</h1>
-    <form action="/enviar-dados" method="POST">
-        <!-- Campo para data -->
-        <label for="data">Data:</label>
-        <input type="date" id="data" name="data" required>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="img/Logo.png" alt="Logo da Empresa"><br>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons">close</span>
+                </div>
+            </div>
 
-        <!-- Campo para volume total produzido no dia -->
-        <label for="volume">Volume Total do Dia (em litros):</label>
-        <input type="number" id="volume" name="volume" step="0.01" required>
+            <div class="sidebar">
+                <a href="dashboard.html">
+                    <span class="material-icons">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="relatorio.html">
+                    <span class="material-icons">receipt_long</span>
+                    <h3>Relatórios</h3>
+                </a>
+                <a href="analise.html">
+                    <span class="material-icons">insights</span>
+                    <h3>Análise</h3>
+                </a>
+                <a href="producao.html">
+                    <span class="material-icons">inventory</span>
+                    <h3>Produção</h3>
+                </a>
+                <a href="formulario.html" class="active">
+                    <span class="material-icons">add</span>
+                    <h3>Lançar Dados</h3>
+                </a>
+                <a href="home.html">
+                    <span class="material-icons">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
 
-        <!-- Campo para quantidade de animais ordenhados -->
-        <label for="animais">Quantidade de Animais Ordenhados:</label>
-        <input type="number" id="animais" name="animais" required>
+        <main>
+            <h1>Atualização de Dados</h1>
+        </main>
 
-        <!-- Campo para observações adicionais -->
-        <label for="observacoes">Observações (opcional):</label>
-        <textarea id="observacoes" name="observacoes" rows="4" placeholder="Adicionar comentários importantes..."></textarea>
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons active">light_mode</span>
+                    <span class="material-icons">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Olá, <b>Deywid</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="img/jorel.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!-- Botão de envio -->
-        <input type="submit" value="Salvar e Enviar">
-    </form>
+    <div class="form-container">
+        <h2>Atualização de Dados de Produção</h2>
+        <form id="dailyDataForm">
+            <!-- Data do Registro -->
+            <label for="data">Data do Registro:</label>
+            <input type="date" id="data" name="data" required>
+
+            <!-- Total de Animais em Produção -->
+            <label>Total de Animais em Produção por Lote:</label>
+            <div class="lote-group">
+                <div class="lote">
+                    <label for="lote1">Lote 1:</label>
+                    <input type="number" id="lote1" name="lote1" placeholder="ex.: 60" required>
+                </div>
+                <div class="lote">
+                    <label for="lote2">Lote 2:</label>
+                    <input type="number" id="lote2" name="lote2" placeholder="ex.: 84">
+                </div>
+            </div>
+            <!-- Botão de Adicionar Novo Lote -->
+            <button type="button" onclick="addLote()">Adicionar Novo Lote</button>
+
+            <!-- Total de Litros Produzidos -->
+            <label for="totalLitros">Total de Litros Produzidos:</label>
+            <input type="number" id="totalLitros" name="totalLitros" placeholder="ex.: 5000" required>
+
+            <!-- Observações de Rendimento -->
+            <label for="observacoes">Observações do Dia:</label>
+            <textarea id="observacoes" name="observacoes" placeholder="Ex.: Rendimento maior devido ao clima" rows="3"></textarea>
+
+            <!-- Botão de Atualização -->
+            <button type="submit">Atualizar Dados</button>
+        </form>
+    </div>
+
+    <script>
+        function addLote() {
+            const loteGroup = document.querySelector('.lote-group');
+            const newLoteDiv = document.createElement('div');
+            newLoteDiv.className = 'lote';
+            const loteCount = loteGroup.querySelectorAll('.lote').length + 1;
+            newLoteDiv.innerHTML = `
+                <label for="lote${loteCount}">Lote ${loteCount}:</label>
+                <input type="number" id="lote${loteCount}" name="lote${loteCount}" placeholder="ex.: 60" required>
+            `;
+            loteGroup.appendChild(newLoteDiv);
+        }
+    </script>
 </body>
 </html>
