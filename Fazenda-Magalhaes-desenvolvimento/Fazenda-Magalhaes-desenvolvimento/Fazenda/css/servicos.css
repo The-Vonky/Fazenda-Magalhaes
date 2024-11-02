@@ -16,6 +16,10 @@ body {
     background-position: center;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 header {
     background: linear-gradient(135deg, #333, #5a5a5a);
     color: white;
@@ -129,7 +133,8 @@ nav ul li a:hover {
 }
 /*******************Seção 2*************************/
 .stn2 {
-    background-color: #EAEAEA;
+    background-color: #eaeaea9e;
+    backdrop-filter: blur(3px);
 }
 
 .title {
