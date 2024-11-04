@@ -149,8 +149,12 @@ nav ul li a:hover {
     padding: 20px;
 }
 .g6 {
-
+    
     padding: 20px;
+}
+
+.g6 .image-section {
+    text-align: right;
 }
 
 .text-section {
