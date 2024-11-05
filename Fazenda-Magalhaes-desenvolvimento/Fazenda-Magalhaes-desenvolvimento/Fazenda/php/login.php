@@ -1,20 +1,6 @@
 <?php
-// Configurações de conexão com o banco de dados
-$servername = "localhost"; 
-$username = "vitorcaixeta"; 
-$password = "Vitor0723";
-$dbname = "fazenda"; 
-
-// Habilita relatórios de erro
-mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-
-// Criação da conexão
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificação da conexão
-if ($conn->connect_error) {
-    die("Conexão falhou: " . $conn->connect_error);
-}
+// Inclui meu arquivo de conexão do banco
+include 'conexao.php';
 
 // Validação dos dados do formulário
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -39,25 +25,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     } else {
         // Prepara e executa a busca
-        $stmt = $conn->prepare("SELECT senha FROM usuarios WHERE email = ?");
+        $stmt = $conn->prepare("SELECT senha, tipo_usuario FROM usuarios WHERE email = ?");
         $stmt->bind_param("s", $email);
         $stmt->execute();
         $stmt->store_result();
 
         // Verifica se o email existe
         if ($stmt->num_rows > 0) {
-            $stmt->bind_result($senha_hash);
+            $stmt->bind_result($senha_hash, $tipo_usuario);
             $stmt->fetch();
 
             // Verifica a senha
             if (password_verify($senha, $senha_hash)) {
+                // Inicia a sessão e armazena os dados do usuário
+                session_start();
+                $_SESSION['id'] = $email; // ou outro identificador único, como ID
+                $_SESSION['tipo_usuario'] = $tipo_usuario;
+
                 echo "<p style='color:green;'>Login realizado com sucesso!</p>";
-                
-                echo "<script>
-                        setTimeout(function() {
-                            window.location.href = 'home.html'; // Redirecione para a página desejada
-                        }, 2000); // Redireciona após 2 segundos
-                      </script>";
+
+                // Redireciona com base no tipo de usuário
+                if ($tipo_usuario === 'admin') {
+                    echo "<script>
+                            setTimeout(function() {
+                                window.location.href = 'dashboard.html'; // Redirecione para o painel do administrador
+                            }, 2000); // Redireciona após 2 segundos
+                          </script>";
+                } else {
+                    echo "<script>
+                            setTimeout(function() {
+                                window.location.href = 'home.html'; // Redirecione para a página do usuário comum
+                            }, 2000); // Redireciona após 2 segundos
+                          </script>";
+                }
             } else {
                 echo "<p style='color:red;'>Senha incorreta.</p>";
             }

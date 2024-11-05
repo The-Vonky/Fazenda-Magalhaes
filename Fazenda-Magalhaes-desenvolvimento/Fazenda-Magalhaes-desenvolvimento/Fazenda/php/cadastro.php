@@ -1,20 +1,6 @@
 <?php
-// Configurações de conexão com o banco de dados
-$servername = "localhost"; 
-$username = "vitorcaixeta"; 
-$password = "Vitor0723";
-$dbname = "fazenda"; 
-
-// Habilita relatórios de erro
-mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-
-// Criação da conexão
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificação da conexão
-if ($conn->connect_error) {
-    die("Conexão falhou: " . $conn->connect_error);
-}
+// Inclui meu arquivo de conexão do banco
+include 'conexao.php';
 
 // Validação dos dados do formulário
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -22,6 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = isset($_POST['email']) ? trim($_POST['email']) : '';
     $senha = isset($_POST['senha']) ? trim($_POST['senha']) : '';
     $confirmar_senha = isset($_POST['confirmar_senha']) ? trim($_POST['confirmar_senha']) : '';
+    $tipo_usuario = isset($_POST['tipo_usuario']) ? trim($_POST['tipo_usuario']) : '';
 
     $erros = [];
 
@@ -65,8 +52,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
 
         // Prepara e executa a inserção
-        $stmt = $conn->prepare("INSERT INTO usuarios (nome, email, senha) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $nome, $email, $senha_hash);
+        $stmt = $conn->prepare("INSERT INTO usuarios (nome, email, senha, tipo_usuario) VALUES (?, ?, ?, ?)");
+        $stmt->bind_param("ssss", $nome, $email, $senha_hash, $tipo_usuario);
 
         if ($stmt->execute()) {
             echo "<p style='color:green;'>Cadastro realizado com sucesso!</p>";
