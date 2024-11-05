@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatório - Fazenda Magalhães</title>
+    <title>Retiradas - Fazenda Magalhães</title>
     <!-- MATERIAL CDN-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--STYLESHEET-->
@@ -30,15 +30,11 @@
                 </a>
                 <a href="relatorio.html" class="active">
                     <span class="material-icons">receipt_long</span>
-                    <h3>Relatórios</h3>
+                    <h3>Retirada</h3>
                 </a>
                 <a href="analise.html">
                     <span class="material-icons">insights</span>
                     <h3>Análise</h3>
-                </a>
-                <a href="producao.html">
-                    <span class="material-icons">inventory</span>
-                    <h3>Produção</h3>
                 </a>
                 <a href="formulario.html">
                     <span class="material-icons">add</span>
@@ -52,10 +48,72 @@
         </aside>
 
         <main>
-            <h1>Relatórios</h1>
+            <h1>Retiradas</h1>
             <div class="date">
                 <input type="date">
             </div>
+
+            <div class="recent-orders">
+                <h2>Tabela de Retirada:</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Horário</th>
+                            <th>Nome do Motorista</th>
+                            <th>Placa do Caminhão</th>
+                            <th>Destinatário</th>
+                            <th>Responsável pela Liberação</th>
+                            <th>Status da Qualidade</th>
+                            <th>Temperatura do Leite</th>
+                            <th>Volume Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09/11/2024</td>
+                            <td>08:15</td>
+                            <td>Karloz Silva</td>
+                            <td>ABC1213</td>
+                            <td>Tirolez</td>
+                            <td>Luis Paulo Magalhães</td>
+                            <td>Ótimo</td>
+                            <td>7C°</td>
+                            <td class="warning">5.589</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Mimosa</td>
+                            <td>85631</td>
+                            <td>3</td>
+                            <td class="warning">Produzindo</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Mimosa</td>
+                            <td>85631</td>
+                            <td>2</td>
+                            <td class="warning">Produzindo</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Mimosa</td>
+                            <td>85631</td>
+                            <td>1</td>
+                            <td class="warning">Produzindo</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Mimosa</td>
+                            <td>85631</td>
+                            <td>1</td>
+                            <td class="warning">Produzindo</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Mostrar Tudo</a>
         </main>
         <!-------------------- END OF MAIN -------------------->
 
@@ -79,6 +137,8 @@
                 </div>
             </div>
             <!-- END OF TOP -->
+
+
         </div>
     </div>
     <script src="js/dashboard.js"></script>
