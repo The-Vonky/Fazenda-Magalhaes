@@ -56,8 +56,9 @@ body {
     font-family: poppins, sans-serif;
     font-size: 0.88rem;
     background: var(--color-background);
-    overflow-x: hidden;
     color: var(--color-dark);
+    overflow-x: auto; /* Ativa o scroll horizontal */
+    max-width: 100%; /* Faz o contêiner se ajustar ao tamanho da tela */
 }
 
 .container {
@@ -775,7 +776,6 @@ main .recent-orders a {
         width: 100%;
         margin-left: -14rem;
     }
-
     main .recent-orders table {
         width: 100%;
         margin: 0;

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualização de Dados de Produção - Fazenda Magalhães</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/lanca-retirada.css">
+    <style>
+        .form-container {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+            margin-top: -92vh;
+            margin-left: 250px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-submit {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="img/Logo.png" alt="Logo da Empresa"><br>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="dashboard.html">
+                    <span class="material-icons">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="retiradas.html">
+                    <span class="material-icons">receipt_long</span>
+                    <h3>Retiradas</h3>
+                </a>
+                <a href="analise.html">
+                    <span class="material-icons">insights</span>
+                    <h3>Análises</h3>
+                </a>
+                <a href="lanca-retirada.html">
+                    <span class="material-icons">add</span>
+                    <h3>Lançar Dados Retirada</h3>
+                </a>
+                <a href="lanca-producao.html">
+                    <span class="material-icons" class="active">add</span>
+                    <h3>Lançar Dados Produção</h3>
+                </a>
+                <a href="lanca-pesagem.html" class="active">
+                    <span class="material-icons">add</span>
+                    <h3>Lançar Dados Pesagem</h3>
+                </a>
+                <a href="home.html">
+                    <span class="material-icons">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Lançamento Pesagem de Leite:</h1>
+        </main>
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons active">light_mode</span>
+                    <span class="material-icons">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Olá, <b>Deywid</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="img/jorel.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="form-container">
+            <h2>Dados da Pesagem por Animal:</h2>
+            <form>
+                <div class="form-group">
+                    <label for="data">Data</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+                <div class="form-group">
+                    <label for="brinco-animal">Brinco do Animal</label>
+                    <input type="text" id="brinco-animal" name="brinco-animal" required>
+                </div>
+                <div class="form-group">
+                    <label for="horario">Horário</label>
+                    <input type="time" id="horario" name="horario" required>
+                </div>
+                <div class="form-group">
+                    <label for="litros">Litros Produzidos</label>
+                    <input type="number" id="litros" name="litros" step="0.1" required>
+                </div>
+                <div class="form-group">
+                    <label for="lote">Lote</label>
+                    <input type="text" id="lote" name="lote" required>
+                </div>
+                <div class="form-submit">
+                    <button type="submit">Registrar Pesagem</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</div>
+</body>
+</html>
