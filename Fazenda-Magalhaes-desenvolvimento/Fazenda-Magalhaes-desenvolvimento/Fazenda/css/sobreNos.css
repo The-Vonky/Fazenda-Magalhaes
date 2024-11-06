@@ -138,12 +138,21 @@ nav ul li a:hover {
     padding: 20px;
 }
 
+.g4 p {
+    margin-bottom: 130px;
+}
+
 .g5 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
 }
+
+.g5 ul {
+    margin-bottom: 100px;
+}
+
 .g6 {
     
     padding: 20px;

@@ -302,14 +302,16 @@ nav ul li a:hover {
 }
 
 .image {
-    flex: 1;
+    margin: auto;
     overflow: hidden;
-    width: max-content;
+    width: 70%;
+    border-radius: 15px;
+    margin-top:30px;
 }
 
 .division img {
-    width: 65%;
-    margin-top:30px;
+    width: 100%;
+    display: block;
     transition: 0.5s;
 }
 
@@ -419,6 +421,10 @@ footer p {
 @media screen and (max-width: 750px){
     .division {
         flex-direction: column;
+    }
+
+    .division .div1 {
+        max-width: 100%;
     }
 
     .div1 {
