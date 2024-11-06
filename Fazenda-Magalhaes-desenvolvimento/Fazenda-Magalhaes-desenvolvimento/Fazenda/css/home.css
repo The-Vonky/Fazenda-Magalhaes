@@ -88,7 +88,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background: url('../img/banner.png') no-repeat center center/cover;
+    background: url('../img/teste1.0.jpg') no-repeat center center/cover;
     height: calc(105vh - 70px); /* 100% da viewport menos a altura do header */
     display: flex;
     justify-content: center;
@@ -175,8 +175,8 @@ nav ul li a:hover {
 }
 /****************** 2º Home **********************/
 .background img {
-    height: 100%;
-    width: 110%;
+    width: 1000px;
+    height: 800px;
     float: right;
     
 }
@@ -361,7 +361,7 @@ nav ul li a:hover {
 
 .container .img2 {
     position: absolute;
-    margin-left: -25em;
+    margin-left: -25.5em;
     width: 60%;
     margin-top: 40px;
 }
