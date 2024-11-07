@@ -1,8 +1,6 @@
 <?php
-// Inclui meu arquivo de conexão do banco
 include 'conexao.php';
 
-// Validação dos dados do formulário
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = isset($_POST['nome']) ? trim($_POST['nome']) : '';
     $email = isset($_POST['email']) ? trim($_POST['email']) : '';

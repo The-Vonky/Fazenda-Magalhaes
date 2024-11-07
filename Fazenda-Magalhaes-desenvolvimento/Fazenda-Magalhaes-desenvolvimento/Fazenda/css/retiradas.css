@@ -57,8 +57,8 @@ body {
     font-size: 0.88rem;
     background: var(--color-background);
     color: var(--color-dark);
-    overflow-x: auto; /* Ativa o scroll horizontal */
-    max-width: 100%; /* Faz o contêiner se ajustar ao tamanho da tela */
+    overflow-x: auto;
+    max-width: 100%;
 }
 
 .container {
@@ -151,17 +151,17 @@ aside .top {
 
 aside .logo {
     display: flex;
-    flex-direction: column; /* Coloca o texto abaixo da logo */
-    align-items: center; /* Centraliza a logo e o texto */
-    text-align: center; /* Alinha o texto ao centro */
-    margin-bottom: 20px; /* Dá espaço após o conjunto logo + texto */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 aside .logo img {
     margin-left: 47px;
-    width: 120px; /* Aumente o valor conforme desejado para ajustar o tamanho */
-    height: auto; /* Mantém a proporção da imagem */
-    margin-bottom: 10px; /* Espaço entre a logo e o texto */
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 aside .close {
@@ -398,26 +398,26 @@ main table tbody tr:last-child td {
 }
 
 main .recent-orders table tbody td:not(:first-child):not(:last-child) {
-    padding-left: 2.8rem; /* Aumenta o espaçamento entre as colunas, sem afetar a primeira e última */
+    padding-left: 2.8rem;
     padding-right: 2.8rem;
 }
 
 main table tbody td, main table thead th {
-    white-space: nowrap; /* Impede que o texto se quebre para a próxima linha */
-    padding: 0.8rem 1.5rem; /* Ajuste o padding para espaçamento desejado */
+    white-space: nowrap;
+    padding: 0.8rem 1.5rem;
 }
 
 main .recent-orders table thead th {
-    background-color: var(--color-info-light);  /* Cor suave no cabeçalho */
+    background-color: var(--color-info-light);
     padding: 1rem 1.5rem;
 }
 
 main table tbody tr {
-    background: #fff;  /* Fundo branco para as linhas */
+    background: #fff;
 }
 
 main table tbody tr:nth-child(even) {
-    background: var(--color-info-light); /* Alterna a cor do fundo das linhas */
+    background: var(--color-info-light);
 }
 
 main table tbody td {
@@ -426,7 +426,7 @@ main table tbody td {
 }
 
 main table thead th, main table tbody td {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);  /* Linha discreta entre colunas */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 main .recent-orders a {
@@ -662,15 +662,14 @@ main .recent-orders a {
     }
     
     main .recent-orders table thead th {
-        background-color: #4b8e8d; /* Cor nova para o cabeçalho */
+        background-color: #4b8e8d;
         color: var(--color-white);
         font-weight: 600;
     }
     
-    /* Se você quiser controlar a largura das colunas, pode adicionar algo assim: */
     main .recent-orders table thead th:nth-child(1), 
     main .recent-orders table tbody td:nth-child(1) {
-        width: 20%; /* Ajuste a largura das colunas conforme necessário */
+        width: 20%;
     }
     
     main .recent-orders table thead th:nth-child(2), 
@@ -689,18 +688,18 @@ main .recent-orders a {
     }
     
     main .recent-orders table tbody tr:nth-child(even) {
-        background: var(--color-info-light); /* Cor de fundo alternada para as linhas */
+        background: var(--color-info-light);
     }
     
     /* Ajustando para telas menores */
     @media screen and (max-width: 1024px) {
         main .recent-orders table {
-            padding: 0.4rem; /* Menor padding para se ajustar melhor em telas menores */
+            padding: 0.4rem;
         }
     
         main .recent-orders table td, 
         main .recent-orders table th {
-            font-size: 0.8rem; /* Reduzindo ainda mais o tamanho da fonte em telas menores */
+            font-size: 0.8rem;
             padding: 0.4rem 0.6rem;
         }
     }
