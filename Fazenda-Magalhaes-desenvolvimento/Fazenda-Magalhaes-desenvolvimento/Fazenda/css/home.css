@@ -177,7 +177,7 @@ nav ul li a:hover {
 .background img {
     width: 1000px;
     height: 800px;
-    float: right;
+    margin-left: 53.63%;
     
 }
 
@@ -192,7 +192,7 @@ nav ul li a:hover {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    position: relative;
+    position: absolute;
 }
 
 .hm ul {
